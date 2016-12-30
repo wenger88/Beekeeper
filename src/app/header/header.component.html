@@ -23,12 +23,14 @@
             <p>Toggleable via the navbar brand.</p>
         </div>
     </div>
-    <nav class="navbar navbar-light navbar-static-top">
+    <nav class="navbar navbar-static-top">
         <div class="container-fluid">
             <a class="logo float-sm-left">
                 <img src="../shared/images/logo.png" class="img-fluid" alt="">
             </a>
-            <button class="navbar-toggler hidden-sm-up float-xs-right" [ngClass]="{'collapsed': isCollapsed}" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2" [attr.aria-expanded]="!isCollapsed" aria-controls="exCollapsingNavbar2" (click)="isCollapsed = !isCollapsed" aria-label="Toggle navigation"></button>
+            <button class="navbar-toggler hidden-sm-up float-xs-right" [ngClass]="{'collapsed': isCollapsed}" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2" [attr.aria-expanded]="!isCollapsed" aria-controls="exCollapsingNavbar2" (click)="isCollapsed = !isCollapsed" aria-label="Toggle navigation">
+                <i class="fa fa-navicon"></i>
+            </button>
             <div class="collapse navbar-toggleable-xs" [attr.aria-expanded]="!isCollapsed"
                  [ngClass]="{'in': !isCollapsed}" id="exCollapsingNavbar2">
 

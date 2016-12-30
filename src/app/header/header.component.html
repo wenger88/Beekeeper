@@ -1,0 +1,50 @@
+<!--<header>
+    <nav class="navbar navbar-static-top">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <ul class="nav navbar-nav float-md-right">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+        </ul>
+    </nav>
+</header>-->
+
+<!-- Fixed navbar -->
+<div class="pos-f-t">
+    <div class="collapse" id="navbar-header">
+        <div class="container bg-inverse p-1">
+            <h3>Collapsed content</h3>
+            <p>Toggleable via the navbar brand.</p>
+        </div>
+    </div>
+    <nav class="navbar navbar-light navbar-static-top">
+        <div class="container-fluid">
+            <a class="logo float-sm-left">
+                <img src="../shared/images/logo.png" class="img-fluid" alt="">
+            </a>
+            <button class="navbar-toggler hidden-sm-up float-xs-right" [ngClass]="{'collapsed': isCollapsed}" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2" [attr.aria-expanded]="!isCollapsed" aria-controls="exCollapsingNavbar2" (click)="isCollapsed = !isCollapsed" aria-label="Toggle navigation"></button>
+            <div class="collapse navbar-toggleable-xs" [attr.aria-expanded]="!isCollapsed"
+                 [ngClass]="{'in': !isCollapsed}" id="exCollapsingNavbar2">
+
+                <ul class="nav navbar-nav float-sm-right">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+

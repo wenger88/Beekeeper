@@ -1,0 +1,83 @@
+
+aside{
+  width: 100%;
+
+  nav{
+    height: 100%;
+
+    ul{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      .list-group-item{
+        border-radius: 0;
+        padding: 0;
+        border: none;
+        border-bottom: 2px solid #34495E;
+        background: #F4B350;
+        flex: 1;
+        width: 100%;
+        text-decoration: none;
+
+        &:last-child{
+          border-bottom: none;
+        }
+
+        .inner-list{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          height: 100%;
+          padding: 0 12px;
+          color: #34495E;
+          font-weight: bold;
+          font-family: "Segoe UI", sans-serif;
+          border-right: 5px solid #34495E;
+          &:hover{
+            text-decoration: none;
+          }
+
+          p{
+            margin: 0;
+            font-size: 18px;
+            font-weight: bold;
+            font-style: italic;
+          }
+
+          i{
+            font-size: 25px;
+          }
+
+          &:hover{
+            background: #34495E;
+            color: #F4B350;
+          }
+
+
+        }
+
+      }
+    }
+
+  }
+
+}
+
+:host{
+  width: 215px;
+  position: fixed;
+  top: 94px;
+  bottom: 0;
+  background: #34495E;
+  left: 0;
+  display: flex;
+  z-index: 9999;
+}
+
+.active {
+  background: #34495E;
+  color: #f39c12 !important;
+  border-right: 5px solid #f39c12!important;
+}

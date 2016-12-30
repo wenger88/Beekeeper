@@ -1,0 +1,19 @@
+<main>
+    <bk-header></bk-header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="sidebar">
+                <div class="button-container">
+                    <button [@ButtonOutIn]="menuState" class="btn" (click)="toggleMenu()"><i class="fa fa-navicon"></i></button>
+                    <h1 style="display: inline-block;">{{title}}</h1>
+                </div>
+                <bk-sidebar [@slideInOut]="menuState"></bk-sidebar>
+            </div>
+
+            <div class="main"  [@ContentOutIn]="menuState">
+                <router-outlet></router-outlet>
+            </div>
+
+        </div>
+    </div>
+</main>

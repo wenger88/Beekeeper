@@ -1,0 +1,28 @@
+.navbar{
+  background: #34495E;
+  /*padding: 40px 20px;*/
+  border-radius: 0;
+  /*padding: 1.5rem 1rem;*/
+  border-bottom: 5px solid #F4B350;
+  line-height: 59px;
+
+  button{
+    margin-top: 17px;
+    border: 1px solid #fff;
+    border-radius: 0;
+  }
+
+
+  .nav {
+    .nav-link{
+      color: #F4B350;
+    }
+
+  }
+
+
+}
+
+.collapse.in {
+  display: block;
+}

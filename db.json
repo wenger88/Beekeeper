@@ -1,0 +1,110 @@
+{
+  "apiaries": [
+    {
+      "id": 0,
+      "name": "",
+      "note": "",
+      "location": "",
+      "date": "2016-12-20T14:34:10.472Z",
+      "active": true,
+      "images":[]
+    }
+  ],
+  "hives": [
+    {
+      "apiaryId": 0,
+      "id": 0,
+      "name": "",
+      "typeId": 5,
+      "active": true,
+      "frameNumber": 12,
+      "hiveState": "",
+      "queen": true,
+      "queenColor": "green",
+      "note": "new beehive",
+      "date": "2016-12-20T14:34:10.472Z"
+    }
+  ],
+  "hiveTypes": [
+    {
+      "id": 1,
+      "name": "12x10"
+    },
+    {
+      "id": 2,
+      "name": "14x12"
+    },
+    {
+      "id": 3,
+      "name": "Bienenkiste"
+    },
+    {
+      "id": 4,
+      "name": "Commercial"
+    },
+    {
+      "id": 5,
+      "name": "Dadant"
+    },
+    {
+      "id": 6,
+      "name": "Dartington"
+    },
+    {
+      "id": 7,
+      "name": "Italica-Carini"
+    },
+    {
+      "id": 8,
+      "name": "Langstroth"
+    },
+    {
+      "id": 9,
+      "name": "Langstroth Poly"
+    },
+    {
+      "id": 10,
+      "name": "National"
+    },
+    {
+      "id": 11,
+      "name": "Nucleus"
+    },
+    {
+      "id": 12,
+      "name": "Rose OSB"
+    },
+    {
+      "id": 13,
+      "name": "Segeberger"
+    },
+    {
+      "id": 14,
+      "name": "Simplex"
+    },
+    {
+      "id": 15,
+      "name": "Smith"
+    },
+    {
+      "id": 16,
+      "name": "Spaarkast"
+    },
+    {
+      "id": 17,
+      "name": "TBH"
+    },
+    {
+      "id": 18,
+      "name": "Warre"
+    },
+    {
+      "id": 19,
+      "name": "WBC"
+    },
+    {
+      "id": 20,
+      "name": "Other"
+    }
+  ]
+}

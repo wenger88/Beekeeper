@@ -135,6 +135,18 @@
       "note": "asdasdasd",
       "date": "2017-01-09T15:36:45.353Z",
       "id": 8
+    },
+    {
+      "apiaryId": 0,
+      "name": "qqq",
+      "typeId": "Bienenkiste",
+      "active": true,
+      "frameNumber": 12,
+      "queen": false,
+      "queenColor": "#ffd613",
+      "note": "asd",
+      "date": "2017-01-09T15:45:29.044Z",
+      "id": 9
     }
   ],
   "hiveTypes": [

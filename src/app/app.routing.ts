@@ -62,7 +62,15 @@ const APP_ROUTES_PROVIDERS: Routes = [
         data: {
             title: 'Create Hive'
         }
+    },
+    {
+        path: 'hive-create',
+        component: HiveCreateComponent,
+        data: {
+            title: 'Create Hive'
+        }
     }
+
 
 ];
 

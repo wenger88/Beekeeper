@@ -1,0 +1,39 @@
+
+.form-check-inline{
+  padding-left: 0;
+}
+
+input[type = radio]{
+  -webkit-appearance: none;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  outline: none;
+  &.white{
+    color: red;
+    background: #fff;
+  }
+  &.blue{
+    color: red;
+    background: #6495ff;
+  }
+
+  &.red{
+    color: red;
+    background: #ff573e;
+  }
+
+  &.green{
+    color: green;
+    background: #8cff5a;
+  }
+  &.yellow{
+    color: yellow;
+    background: #ffd613;
+  }
+
+  &:active, &:checked{
+    border: 2px solid #000;
+  }
+
+}

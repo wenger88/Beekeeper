@@ -1,0 +1,11 @@
+
+<div *ngIf="hive">
+    <p>Name: {{hive.name}}</p>
+    <p>Hive Type: {{hive.typeId}}</p>
+    <p>Is Active: {{hive.active}}</p>
+    <p>Frames Number: {{hive.frameNumber}}</p>
+    <p>Has Queen: {{hive.queen}}</p>
+    <p>Queen Color: <input type="color" [value]="hive.queenColor" disabled></p>
+    <p>Note: {{hive.note}}</p>
+    <p>Created on: {{hive.date | date:'short'}}</p>
+</div>

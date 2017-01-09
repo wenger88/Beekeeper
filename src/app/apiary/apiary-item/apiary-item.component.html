@@ -1,0 +1,9 @@
+<ul class="list-group">
+    <li class="list-group-item">
+        <p>Name: {{apiary.name}}</p>
+        <p>Location: {{apiary.location}}</p>
+        <p>Created: {{apiary.date | date:'dd/MM/yyyy'}}</p>
+        <p>Hives: {{hives.length}}</p>
+        <p><a [routerLink]="['/details', apiary.id]" class="btn btn-primary">Details</a></p>
+    </li>
+</ul>

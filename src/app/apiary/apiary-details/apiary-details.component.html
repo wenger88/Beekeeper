@@ -1,0 +1,15 @@
+
+<div *ngIf="apiary">
+    <p>Name: {{apiary.name}}</p>
+    <p>Location: {{apiary.location}}</p>
+    <p>Created On: {{apiary.date | date:'dd/MM/yyyy'}}</p>
+    <p>Hives: {{hives.length}}</p>
+    <a *ngFor="let hive of hives; let i = index" [routerLink]="['/hive-details', hive.id]">
+        <i class="fa fa-archive"></i>
+    </a>
+
+    <button [routerLink]="['/hive-create', apiary.id]" type="button" class="btn btn-secondary">Create new hive</button>
+
+
+</div>
+

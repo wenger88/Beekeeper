@@ -2,19 +2,27 @@
   "apiaries": [
     {
       "id": 0,
-      "name": "",
-      "note": "",
-      "location": "",
+      "name": "Apiary 1",
+      "note": "asd",
+      "location": "Rankovce",
       "date": "2016-12-20T14:34:10.472Z",
       "active": true,
-      "images":[]
+      "images": []
+    },
+    {
+      "name": "qweqwe",
+      "location": "qweqwe",
+      "note": "qweqwe",
+      "active": true,
+      "date": "2017-01-09T14:48:31.476Z",
+      "id": 1
     }
   ],
   "hives": [
     {
       "apiaryId": 0,
       "id": 0,
-      "name": "",
+      "name": "1",
       "typeId": 5,
       "active": true,
       "frameNumber": 12,
@@ -23,6 +31,90 @@
       "queenColor": "green",
       "note": "new beehive",
       "date": "2016-12-20T14:34:10.472Z"
+    },
+    {
+      "apiaryId": 0,
+      "name": "asd",
+      "typeId": "12x10",
+      "active": true,
+      "frameNumber": 12,
+      "queen": true,
+      "queenColor": "blue",
+      "note": "asdasd",
+      "date": "2017-01-09T13:37:52.678Z",
+      "id": 1
+    },
+    {
+      "apiaryId": 0,
+      "name": "qwe",
+      "typeId": "Dadant",
+      "active": true,
+      "frameNumber": 5,
+      "queen": true,
+      "queenColor": "green",
+      "note": "asd",
+      "date": "2017-01-09T13:45:11.377Z",
+      "id": 2
+    },
+    {
+      "apiaryId": 0,
+      "name": "asdasdasd",
+      "typeId": "Langstroth Poly",
+      "active": true,
+      "frameNumber": 33,
+      "queen": true,
+      "queenColor": "#ff573e",
+      "note": "asdasd",
+      "date": "2017-01-09T14:05:21.623Z",
+      "id": 3
+    },
+    {
+      "apiaryId": 0,
+      "name": "green",
+      "typeId": "Commercial",
+      "active": true,
+      "frameNumber": 12,
+      "queen": true,
+      "queenColor": "#8cff5a",
+      "note": "asdads",
+      "date": "2017-01-09T14:07:15.081Z",
+      "id": 4
+    },
+    {
+      "apiaryId": 1,
+      "name": "qweqwe",
+      "typeId": "Bienenkiste",
+      "active": true,
+      "frameNumber": 12,
+      "queen": true,
+      "queenColor": "#8cff5a",
+      "note": "asdasdasdasd",
+      "date": "2017-01-09T14:48:50.921Z",
+      "id": 5
+    },
+    {
+      "apiaryId": 1,
+      "name": "adddsss",
+      "typeId": "Simplex",
+      "active": true,
+      "frameNumber": 12,
+      "queen": true,
+      "queenColor": "#ffd613",
+      "note": "asdasdasd",
+      "date": "2017-01-09T15:11:03.765Z",
+      "id": 6
+    },
+    {
+      "apiaryId": 1,
+      "name": "cvcv",
+      "typeId": "Rose OSB",
+      "active": true,
+      "frameNumber": 12,
+      "queen": true,
+      "queenColor": "#ff573e",
+      "note": "cvcvcv",
+      "date": "2017-01-09T15:19:19.597Z",
+      "id": 7
     }
   ],
   "hiveTypes": [

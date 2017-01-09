@@ -1,0 +1,10 @@
+
+<div *ngIf="hive">
+    <li  class="list-group-item">
+        <p>Name: {{hive.name}}</p>
+        <p>Hive Type: {{hive.typeId}}</p>
+        <p>Is Active: {{hive.active}}</p>
+        <p>Date: {{hive.date | date:'dd/MM/yyyy'}}</p>
+        <button class="btn btn-primary" [routerLink]="['/hive-details', hive.id]">Details</button>
+    </li>
+</div>

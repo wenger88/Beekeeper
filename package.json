@@ -18,6 +18,7 @@
     "@angular/platform-browser-dynamic": "~2.2.0",
     "@angular/router": "~3.2.0",
     "@ng-bootstrap/ng-bootstrap": "^1.0.0-alpha.15",
+    "@types/lodash": "^4.14.47",
     "core-js": "~2.4.1",
     "lodash": "^4.17.4",
     "rxjs": "5.0.0-beta.12",

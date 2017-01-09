@@ -16,6 +16,14 @@
       "active": true,
       "date": "2017-01-09T14:48:31.476Z",
       "id": 1
+    },
+    {
+      "name": "Goran",
+      "location": "Skopje",
+      "note": "",
+      "active": false,
+      "date": "2017-01-09T15:36:30.539Z",
+      "id": 2
     }
   ],
   "hives": [
@@ -115,6 +123,18 @@
       "note": "cvcvcv",
       "date": "2017-01-09T15:19:19.597Z",
       "id": 7
+    },
+    {
+      "apiaryId": 2,
+      "name": "Hive1",
+      "typeId": "Langstroth",
+      "active": true,
+      "frameNumber": 12,
+      "queen": true,
+      "queenColor": "#6495ff",
+      "note": "asdasdasd",
+      "date": "2017-01-09T15:36:45.353Z",
+      "id": 8
     }
   ],
   "hiveTypes": [

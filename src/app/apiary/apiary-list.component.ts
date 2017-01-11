@@ -5,6 +5,7 @@
 import {Component, OnInit} from "@angular/core";
 import {DataService} from "../core/services/data.service";
 import {Apiary} from "../shared/interfaces";
+import {ApiaryService} from "./apiary.service";
 @Component({
     selector: 'bk-apiary',
     template: require('./apiary-list.component.html'),
@@ -18,7 +19,7 @@ export class ApiaryListComponent implements OnInit{
     apiaries: Apiary[];
 
 
-    constructor(private dataService: DataService){
+    constructor(private apiaryService: ApiaryService){
         this.title = 'Apiaries';
     }
 
@@ -30,7 +31,7 @@ export class ApiaryListComponent implements OnInit{
     }
 
     getAllApiaries(){
-        this.dataService.getAllApiaries()
+        this.apiaryService.getAllApiaries()
             .subscribe((apiaries: Apiary[]) => {
                 this.apiaries = apiaries;
             })

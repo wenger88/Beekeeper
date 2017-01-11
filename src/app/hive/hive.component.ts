@@ -5,6 +5,7 @@
 import {Component, OnInit} from "@angular/core";
 import {DataService} from "../core/services/data.service";
 import {Hive} from "../shared/interfaces";
+import {HiveService} from "./hive.service";
 @Component({
     selector: 'bk-hive',
     template: require('./hive.component.html'),
@@ -15,7 +16,7 @@ export class HiveComponent implements OnInit{
 
     hives: Hive[];
 
-    constructor(private dataService: DataService){
+    constructor(private hiveService: HiveService){
 
     }
 
@@ -27,7 +28,7 @@ export class HiveComponent implements OnInit{
 
 
     getAllHives(){
-        this.dataService.getAllHives()
+        this.hiveService.getAllHives()
             .subscribe((hives: Hive[]) => {
                 this.hives = hives
             })

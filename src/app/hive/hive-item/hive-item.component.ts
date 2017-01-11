@@ -7,6 +7,7 @@ import {Component, Input, OnInit} from "@angular/core";
 import {Hive, Apiary} from "../../shared/interfaces";
 import {DataService} from "../../core/services/data.service";
 import * as _ from 'lodash';
+import {ApiaryService} from "../../apiary/apiary.service";
 
 
 @Component({
@@ -23,12 +24,15 @@ export class HiveItemComponent implements OnInit{
     apiaryName: string;
 
 
-    constructor(private dataService: DataService){}
+    constructor(private apiaryService: ApiaryService){}
 
     ngOnInit(): void {
-        this.dataService.getAllApiaries()
+        this.apiaryService.getAllApiaries()
             .subscribe((apiaries: Apiary[]) => {
                 this.apiaries = apiaries;
+                if (typeof this.hive.apiaryId === 'string'){
+                    this.hive.apiaryId = parseInt(this.hive.apiaryId);
+                }
                 let name = _.filter(this.apiaries, ['id', this.hive.apiaryId]);
                 this.apiaryName = name[0].name;
                 console.log('apiaryName: ', this.apiaryName);

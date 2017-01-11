@@ -4,9 +4,11 @@
 
 import {Component, OnInit} from "@angular/core";
 import {FormGroup, FormBuilder, FormControl, Validators} from "@angular/forms";
-import {DataService} from "../../core/services/data.service";
 import {Router} from "@angular/router";
 import {Apiary} from "../../shared/interfaces";
+import {ApiaryService} from "../apiary.service";
+
+
 @Component({
     selector: 'bk-apiary-create',
     template: require('./apiary-create.component.html'),
@@ -18,7 +20,9 @@ export class ApiaryCreateComponent implements OnInit{
     apiaryForm: FormGroup;
     apiary: Apiary;
 
-    constructor(private dataService: DataService, private router: Router, private fb: FormBuilder){}
+    constructor(private apiaryService: ApiaryService,
+                private router: Router,
+                private fb: FormBuilder){}
 
     ngOnInit(): void {
 
@@ -28,12 +32,13 @@ export class ApiaryCreateComponent implements OnInit{
             note: new FormControl('', [Validators.required]),
             active: new FormControl(false),
             date: new FormControl(new Date())
-        })
+        });
 
     }
 
+
     onSubmit(){
-        this.dataService.addApiary(this.apiaryForm.value)
+        this.apiaryService.addApiary(this.apiaryForm.value)
             .subscribe(
                 (data) => {
                     this.router.navigate(['/apiary']);

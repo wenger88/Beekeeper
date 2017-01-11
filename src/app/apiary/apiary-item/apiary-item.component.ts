@@ -5,6 +5,7 @@
 import {Component, Input, OnInit} from "@angular/core";
 import {DataService} from "../../core/services/data.service";
 import {Apiary, Hive} from "../../shared/interfaces";
+import {ApiaryService} from "../apiary.service";
 @Component({
     selector: 'bk-apiary-item',
     template: require('./apiary-item.component.html'),
@@ -16,10 +17,10 @@ export class ApiaryItemComponent implements OnInit{
     @Input() apiary: Apiary;
     hives: any[] = [];
 
-    constructor(private dataService: DataService){}
+    constructor(private apiaryService: ApiaryService){}
 
     ngOnInit(): void {
-        this.dataService.getApiaryHives(this.apiary.id)
+        this.apiaryService.getApiaryHives(this.apiary.id)
             .subscribe((hives: Hive[]) => this.hives = hives)
     }
 

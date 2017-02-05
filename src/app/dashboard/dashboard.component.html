@@ -5,7 +5,18 @@
 </div>
 
 
-
+<h2>Bar Chart</h2>
 <div style="width: 400px;">
-    <custom-chart [type]="'bar'" [width]="400" [height]="400" [values]="values" [labels]="labels" [colors]="chartColors"></custom-chart>
+    <custom-chart [type]="'bar'" [width]="400" [height]="400" [values]="values" [labels]="labels" [colors]="chartColors" [title]="'Bar Chart'" [label]="'Bar Chart'"></custom-chart>
+</div>
+
+<h2>Pie Chart</h2>
+<div style="width: 400px">
+    <custom-chart [type]="'pie'" [width]="400" [height]="400" [values]="values" [labels]="labels" [colors]="chartColors" [title]="'Pie Chart'" [label]="'Pie Chart'"></custom-chart>
+</div>
+
+<h2>Line Chart</h2>
+
+<div style="width: 400px">
+    <custom-chart [type]="'line'" [width]="400" [height]="400" [values]="values" [labels]="labels" [colors]="chartColors" [title]="'Pie Chart'" [label]="'Pie Chart'"></custom-chart>
 </div>

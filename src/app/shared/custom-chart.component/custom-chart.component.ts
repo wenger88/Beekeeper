@@ -21,6 +21,7 @@ export class CustomChartComponent implements AfterViewInit{
     @Input() colors:string[];
     @Input() title:string;
     @Input() type: string;
+    @Input() label: string;
 
     constructor(){
     }
@@ -29,6 +30,7 @@ export class CustomChartComponent implements AfterViewInit{
         let data:any = {
             labels: this.labels,
             datasets: [{
+                label: this.label,
                 data: this.values,
                 backgroundColor: this.colors,
             }]
@@ -36,6 +38,13 @@ export class CustomChartComponent implements AfterViewInit{
         let options:any = {
             // this avoids 0x0 charts
             responsive: false,
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
         };
         if (this.title) {
             options.title = {

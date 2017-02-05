@@ -24,6 +24,7 @@ export class HiveCreateComponent implements OnInit{
     apiary: Apiary;
     apiaries: Apiary[];
     hasApiaryId: boolean;
+    myArray: any[] = [];
 
     constructor(private hiveService: HiveService, private apiaryService: ApiaryService, private router: Router, private fb: FormBuilder, private route: ActivatedRoute){}
 
@@ -73,9 +74,48 @@ export class HiveCreateComponent implements OnInit{
             .subscribe((apiaries: Apiary[]) => this.apiaries = apiaries)
     }
 
-    onSubmit(){
+    multiHives(value: any){
 
-        Object.assign(this.hive, this.hiveForm.value);
+    }
+
+    onSubmit(value: any){
+
+            for (var i = 0; i < value; i++){
+
+
+                Object.assign(this.hive, this.hiveForm.value);
+                console.log(this.hiveForm['controls']['name'].value);
+
+                if (this.hasApiaryId){
+                    this.hive.apiaryId = this.apiary.id;
+                    this.hasApiaryId = true;
+                    this.myArray.push(this.hive);
+                    this.myArray[i].name = this.myArray[i].name + '-' + i;
+                    this.hiveService.addHive(this.hive)
+                        .subscribe(
+                            (data) => {
+                                this.router.navigate(['/details', this.apiary.id])
+                            },
+                            error => console.log("Error HTTP Post Service"), // in case of failure show this message
+                            () => console.log("Job Done Post !")
+                        )
+                }else{
+                    this.hiveService.addHive(this.hive)
+                        .subscribe(
+                            (data) => {
+                                this.hasApiaryId = false;
+                                this.router.navigate(['/hives'])
+                            },
+                            error => console.log("Error HTTP Post Service"), // in case of failure show this message
+                            () => console.log("Job Done Post !")
+                        )
+                }
+
+            console.log(this.myArray)
+
+        }
+
+        /*Object.assign(this.hive, this.hiveForm.value);
 
         if (this.hasApiaryId){
             this.hive.apiaryId = this.apiary.id;
@@ -98,7 +138,7 @@ export class HiveCreateComponent implements OnInit{
                     error => console.log("Error HTTP Post Service"), // in case of failure show this message
                     () => console.log("Job Done Post !")
                 )
-        }
+        }*/
 
 
     }

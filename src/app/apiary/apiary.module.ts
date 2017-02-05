@@ -12,11 +12,13 @@ import {ApiaryDetailsComponent} from "./apiary-details/apiary-details.component"
 import {ApiaryCreateComponent} from "./apiary-create/apiary-create.component";
 import {ApiaryService} from "./apiary.service";
 import {RouterModule} from "@angular/router";
+import {NgbModule} from "@ng-bootstrap/ng-bootstrap";
 @NgModule({
     imports: [
         CommonModule,
         ReactiveFormsModule,
-        RouterModule
+        RouterModule,
+        NgbModule.forRoot(),
     ],
     declarations: [
         ApiaryListComponent,

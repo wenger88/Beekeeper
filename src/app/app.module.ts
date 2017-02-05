@@ -13,16 +13,19 @@ import {NgbModule} from "@ng-bootstrap/ng-bootstrap";
 import {DashboardComponent} from "./dashboard/dashboard.component";
 import {ApiaryModule} from "./apiary/apiary.module";
 import {HiveModule} from "./hive/hive.module";
+import {LineChartDirective} from "./shared/line-chart.directive";
+import {CustomChartComponent} from "./shared/custom-chart.component/custom-chart.component";
 @NgModule({
 	imports: [
 		FormsModule,
         ReactiveFormsModule,
 		HttpModule,
 		BrowserModule,
+		NgbModule.forRoot(),
 		ApiaryModule,
         HiveModule,
 		routing,
-		NgbModule.forRoot()
+
 
 	],
 	declarations: [
@@ -30,6 +33,8 @@ import {HiveModule} from "./hive/hive.module";
 		HeaderComponent,
 		SidebarComponent,
         DashboardComponent,
+		LineChartDirective,
+		CustomChartComponent
 
 	],
 	providers: [],

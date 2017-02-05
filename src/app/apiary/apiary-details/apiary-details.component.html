@@ -4,11 +4,19 @@
     <p>Location: {{apiary.location}}</p>
     <p>Created On: {{apiary.date | date:'dd/MM/yyyy'}}</p>
     <p>Hives: {{hives.length}}</p>
-    <a *ngFor="let hive of hives; let i = index" [routerLink]="['/hive-details', hive.id]">
-        <i class="fa fa-archive"></i>
-    </a>
+    <div class="hives">
+        <a cla *ngFor="let hive of hives; let i = index" [routerLink]="['/hive-details', hive.id]" placement="bottom" ngbTooltip="{{hive.name}}">
+            <img src="http://res.cloudinary.com/wenger88/image/upload/v1484436567/Asset_1_y5poy1.png" class="img-fluid" alt="">
+            <div [ngStyle]="{'backgroundColor': hive.queenColor, 'height': '10px', 'margin-top': '5px'}"></div>
+        </a>
+    </div>
 
-    <button [routerLink]="['/hive-create', apiary.id]" type="button" class="btn btn-secondary">Create new hive</button>
+
+    <div style="margin-top: 20px;">
+        <button [routerLink]="['/hive-create', apiary.id]" type="button" class="btn btn-secondary">Create new hive</button>
+    </div>
+
+
 
 
 </div>

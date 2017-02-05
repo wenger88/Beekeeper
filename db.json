@@ -1,128 +1,38 @@
 {
   "apiaries": [
     {
-      "id": 0,
       "name": "Apiary 1",
-      "note": "asd",
-      "location": "Rankovce",
-      "date": "2016-12-20T14:34:10.472Z",
-      "active": true,
-      "images": []
-    },
-    {
-      "name": "qweqwe",
-      "location": "qweqwe",
-      "note": "qweqwe",
-      "active": true,
-      "date": "2017-01-09T14:48:31.476Z",
-      "id": 1
-    },
-    {
-      "name": "Apiary 2",
       "location": "Kriva Palanka",
       "note": "New Apiary",
       "active": true,
-      "date": "2017-01-11T13:25:57.985Z",
-      "id": 2
+      "date": "2017-01-19T17:04:15.137Z",
+      "id": 1
     }
   ],
   "hives": [
     {
-      "apiaryId": 0,
-      "id": 0,
-      "name": "1",
-      "typeId": 5,
-      "active": true,
-      "frameNumber": 12,
-      "hiveState": "",
-      "queen": true,
-      "queenColor": "green",
-      "note": "new beehive",
-      "date": "2016-12-20T14:34:10.472Z"
-    },
-    {
-      "apiaryId": 0,
-      "name": "hive 1.1",
-      "typeId": "Langstroth",
+      "apiaryId": 1,
+      "name": "hive 10",
+      "typeId": "Dadant",
       "active": true,
       "frameNumber": 12,
       "queen": true,
-      "queenColor": "#6495ff",
+      "queenColor": "#fff",
       "note": "hive 1.1",
-      "date": "2017-01-11T12:14:58.353Z",
+      "date": "2017-01-19T17:04:47.034Z",
       "id": 1
     },
     {
-      "name": "hive 1.2",
-      "typeId": "Dadant",
-      "active": true,
+      "apiaryId": 1,
+      "name": "hive 1.2-0",
+      "typeId": "Bienenkiste",
+      "active": false,
       "frameNumber": 12,
-      "queen": true,
-      "queenColor": "#ff573e",
-      "note": "hive 1.2",
-      "date": "2017-01-11T12:19:44.787Z",
-      "apiaryId": 0,
+      "queen": false,
+      "queenColor": "#fff",
+      "note": "asd",
+      "date": "2017-01-19T17:06:40.086Z",
       "id": 2
-    },
-    {
-      "name": "hive 2.1",
-      "typeId": "Langstroth",
-      "active": true,
-      "frameNumber": 12,
-      "queen": true,
-      "queenColor": "#ff573e",
-      "note": "HIVE 2.1",
-      "date": "2017-01-11T12:37:30.185Z",
-      "apiaryId": 1,
-      "id": 3
-    },
-    {
-      "name": "hive 2.2",
-      "typeId": "Dadant",
-      "active": true,
-      "frameNumber": 12,
-      "queen": true,
-      "queenColor": "#8cff5a",
-      "note": "hive 2.2",
-      "date": "2017-01-11T12:44:47.492Z",
-      "apiaryId": "1",
-      "id": 4
-    },
-    {
-      "name": "hive 1.3",
-      "typeId": "National",
-      "active": true,
-      "frameNumber": 12,
-      "queen": true,
-      "queenColor": "#6495ff",
-      "note": "hive 1.3",
-      "date": "2017-01-11T12:49:34.468Z",
-      "apiaryId": "0",
-      "id": 5
-    },
-    {
-      "apiaryId": 1,
-      "name": "hive 2.3",
-      "typeId": "Nucleus",
-      "active": true,
-      "frameNumber": 12,
-      "queen": true,
-      "queenColor": "#ff573e",
-      "note": "hive 2.3",
-      "date": "2017-01-11T12:59:13.099Z",
-      "id": 6
-    },
-    {
-      "apiaryId": 2,
-      "name": "hive 3.1",
-      "typeId": "",
-      "active": true,
-      "frameNumber": 12,
-      "queen": true,
-      "queenColor": "#6495ff",
-      "note": "hive 3.1",
-      "date": "2017-01-11T13:26:21.976Z",
-      "id": 7
     }
   ],
   "hiveTypes": [
